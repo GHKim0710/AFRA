@@ -1,2 +1,1 @@
-# AFRA
-# Ai Fashion Recommendation Application
+# AFRA ( Ai Fashion Recommendation Application )
