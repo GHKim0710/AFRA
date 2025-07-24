@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Fashion</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="recheck_password">비밀번호 확인</string>
+    <string name="contentDescription">비밀번호 보기 전환</string>
+    <string name="find_id_button">아이디 찾기</string>
+    <string name="longlong1">|</string>
+    <string name="find_pw_button">비밀번호 찾기</string>
+    <string name="longlong2">|</string>
+    <string name="signup_button">회원가입</string>
+    <string name="login">로그인</string>
+    <string name="OR">OR</string>
+    <string name="stark">카카오로 시작하기</string>
+    <string name="closet">이곳은 옷장입니다</string>
+    <string name="cart_button">장바구니</string>
+    <string name="numberORemail">전화번호 또는 이메일</string>
+
+</resources>

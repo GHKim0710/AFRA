@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <!-- ScrollView의 단일 자식으로 모든 UI를 담는 LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        tools:ignore="UselessParent">
+
+        <!-- 이메일 입력 -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="330dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/login_background"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:layout_marginTop="40dp"
+            android:autofillHints="emailAddress" />
+
+        <!-- 비밀번호 입력 -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:autofillHints="password"
+            android:background="@drawable/login_background"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxWidth="330dp"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#666666" />
+
+        <!-- 아이디 / 비밀번호 찾기 / 회원가입 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textFindId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_id_button"
+                android:textColor="#000000"
+                android:paddingEnd="8dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/longlong1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textFindPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_pw_button"
+                android:textColor="#000000"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/longlong2"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_button"
+                android:textColor="#000000"
+                android:paddingStart="8dp"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <!-- 로그인 버튼 -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="330dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login"
+            android:backgroundTint="#FAF0E6"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp" />
+
+        <!-- 가로 구분선 + OR 텍스트 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OR"
+                android:textColor="#000000"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <!-- 카카오 로그인 버튼 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonKakaoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="330dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FEE500"
+            android:text="@string/stark"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+</ScrollView>
